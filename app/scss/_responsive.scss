@@ -1,0 +1,268 @@
+@media only screen and (max-width: 1580px) {
+  .story {
+    padding: 165px 10% 148px 10%;
+    &__img-holder {
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .footer {
+    &__top {
+      &__logo {
+        padding-left: 250px;
+      }
+    }
+  }
+}
+
+// Large devices
+@media only screen and (max-width: 1290px) {
+  .header {
+    &__top-bar,
+    &__menu-bar {
+      padding: 6px 10px 5px;
+    }
+  }
+  .story {
+    padding: 165px 10px 148px 10px;
+  }
+
+  .footer {
+    &__top {
+      &__logo {
+        padding-left: 100px;
+      }
+    }
+  }
+}
+
+// Medium devices
+@media only screen and (max-width: 1024px) {
+  .header {
+    &__hero {
+      &__text-holder {
+        padding: 240px 0 0 100px;
+      }
+    }
+  }
+
+  .services {
+    &__cards-holder {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-self: center;
+      place-self: center;
+      justify-items: center;
+      &__card {
+        /* Style for "shuttersto" */
+        width: 259px;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: grid;
+        text-align: center;
+      }
+    }
+  }
+
+  .story {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    &__text-holder {
+      hr {
+        width: 40px;
+        height: 2px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .clients {
+    margin: 92px 0 108px;
+
+    &__text-holder {
+      h2 {
+        font-family: $font-secondary;
+        font-size: 36px;
+        text-transform: uppercase;
+        position: relative;
+        font-weight: 600;
+        padding-bottom: 18px;
+        margin-left: 38px;
+        padding-top: 2px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 2px;
+          background-color: #af943e;
+          top: 100%;
+          width: 40px;
+          left: 46%;
+          transform: translateX(-50%);
+        }
+      }
+      p {
+        font-family: $font-primary;
+        color: $color-story-first-p;
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+    }
+    &__logo-holder {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .footer {
+    &__top {
+      padding-left: 100px;
+      &__logo {
+        padding-left: 0;
+        padding-right: 60px;
+      }
+      &__links {
+        padding-right: 60px;
+
+        &__link {
+          &--first {
+            padding-top: 6px !important;
+          }
+          i {
+            font-size: 12px;
+            padding-right: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .testimonials {
+    &__text-holder {
+      margin: 100px 0 100px 13px;
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    &__top {
+      padding-left: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .footer {
+    &__top {
+      padding-left: 40px;
+      flex-direction: column;
+    }
+  }
+}
+
+// Small devices
+@media only screen and (max-width: 576px) {
+  .header {
+    &__menu-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__hero {
+      &__text-holder {
+        padding: 240px 0 0 10px;
+
+        &__h1 {
+          font-size: 30px;
+        }
+        &__p {
+          font-size: 12px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .clients {
+    &__logo-holder {
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .header {
+    &__hero {
+      &__text-holder {
+        &__h1 {
+          font-size: 36px;
+        }
+        &__p {
+          font-size: 12px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .services {
+    &__cards-holder {
+      grid-template-columns: 1fr;
+    }
+  }
+  .testimonials {
+    &__text-holder {
+      margin: 100px 0;
+      padding: 45px 0 62px;
+      width: 90%;
+    }
+  }
+  .clients {
+    &__logo-holder {
+      grid-template-columns: 1fr;
+    }
+  }
+  .story {
+    &__img-holder {
+      width: 90%;
+      height: 260px;
+      img {
+        width: 90%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    p,
+    a {
+      font-size: 12px;
+    }
+    &__top {
+      padding-left: 10px;
+      &__logo {
+        padding-right: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  .footer {
+    p {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 280px) {
+  .header {
+    &__top-bar {
+      &__contact {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

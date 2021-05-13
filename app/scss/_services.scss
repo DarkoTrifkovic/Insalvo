@@ -1,0 +1,69 @@
+.services {
+    margin-top: 100px;
+    margin-left: 12px;
+
+    &__text-holder {
+        &__h2 {
+            font-size: 36px;
+            text-transform: uppercase;
+            position: relative;
+            font-weight: 600;
+            padding-bottom: 18px;
+            &::after {
+                @include h-after;
+                left: 50%;               
+            }
+        }
+
+        p {
+            padding-top: 10px;
+            color: #666666;
+            font-size: 16px;
+            text-align: center;
+            font-family: $font-primary;
+        }
+
+    }
+
+    &__cards-holder {
+        gap: 20px;
+        margin-top: 98px;
+        &__card {
+            /* Style for "shuttersto" */
+            width: 259px;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: grid;
+            text-align: center;
+            img {
+                justify-self: center;
+                margin-top: 45px;
+                margin-bottom: -10px;
+            }
+            h3 {
+                font-size: 18px;
+                color: #fff;
+                text-transform: uppercase;
+                font-family: $font-secondary;
+            }
+
+            &--card1 {
+                background-image: url('../../img/services/services_bkg_1.png');
+
+            }
+            &--card2 {
+                background-image: url('../../img/services/services_bkg_2.png');
+
+            }
+            &--card3 {
+                background-image: url('../../img/services/services_bkg_3.png');
+
+            }
+            &--card4 {
+                background-image: url('../../img/services/services_bkg_4.png');
+
+            }
+            
+        }
+    }
+}

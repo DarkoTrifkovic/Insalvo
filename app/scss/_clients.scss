@@ -1,0 +1,54 @@
+.clients {
+  margin: 92px 0 108px;
+
+  &__text-holder {
+    h2 {
+      font-size: 36px;
+      text-transform: uppercase;
+      position: relative;
+      font-weight: 600;
+      padding-bottom: 18px;
+      margin-left: 38px;
+      padding-top: 2px;
+
+      &::after {
+        @include h-after;
+        left: 46%;
+      }
+    }
+    p {
+      color: $color-story-first-p;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+  }
+  &__logo-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 110px;
+    margin-top: 110px;
+    margin-left: 46px;
+
+    &__img-holder {
+      &--c1,
+      &--c2 {
+        margin-top: 5px;
+      }
+      &--c4 {
+        margin-top: 3px;
+      }
+      &--c5 {
+        margin-top: 7px;
+      }
+      &--c6 {
+        margin-top: 5px;
+      }
+      &--c7 {
+        margin-top: -8px;
+      }
+      &--c8 {
+        margin-top: 7px;
+      }
+    }
+  }
+}

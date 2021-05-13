@@ -1,0 +1,42 @@
+.testimonials {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../../img/testimonials.jpg');
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    &__text-holder {
+        margin: 100px 0 100px 13px;
+        padding: 45px 113.5px 62px;
+        border: 1px solid $color-primary;
+        width: 57.5%;
+        h2, &__name {
+            text-transform: uppercase;
+        }
+        &__name {
+            font-weight: 400;
+            font-size: 14px;
+            
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 36px;
+            position: relative;
+            padding-bottom: 15px;
+
+            &::after {
+                @include h-after;
+                left: 50%;  
+            }
+        }
+        p {
+            padding-top: 23px;
+            font-weight: 300;
+            line-height: 30px;
+            &:last-child {
+                padding-top: 5px;
+                padding-left: 18px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@mixin hr-style {
+    width: 40px;
+    height: 2px;
+    background-color: $color-primary;
+}
+
+@mixin h-after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $color-primary;
+    top: 100%;
+    width: 40px;
+    transform: translateX(-50%);
+}
