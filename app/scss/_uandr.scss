@@ -1,0 +1,41 @@
+.UandR__wrapper {
+	display: flex;
+}
+
+.UandR__img-holder {
+	min-height: 550px;
+}
+
+.UandR__text-holder {
+	background-color: $color-bckg-u-and-r;
+	color: #fff;
+	transform: translate(-130px, 40px);
+	@include u-and-r;
+}
+
+.UandR__h2 {
+	font-size: 36px;
+	text-transform: capitalize;
+	padding-bottom: 40px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+.UandR__p {
+	width: 430px;
+}
+
+.UandR__wrapper--inverse {
+	display: flex;
+	justify-content: flex-end;
+
+	.UandR__h2 {
+		padding-top: 2px;
+	}
+}
+
+.UandR__text-holder--inverse {
+	color: $color-bckg-u-and-r;
+	background-color: $color-bckg-u-and-r-reverse;
+	transform: translate(150px, 42px);
+	@include u-and-r;
+}

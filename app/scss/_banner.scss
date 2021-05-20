@@ -1,0 +1,74 @@
+.banner {
+	margin-bottom: 100px;
+}
+
+.banner__slide {
+	min-height: 780px;
+}
+
+.banner__h1,
+.banner__a {
+	text-transform: uppercase;
+}
+
+.banner__h1 {
+	font-size: 60px;
+	font-weight: bold;
+	padding-top: 236px;
+	padding-bottom: 24px;
+	letter-spacing: .5px;
+	&::after {
+		@include h-after;
+		left: 26px;
+		width: 50px;
+	}
+}
+.banner__p {
+	padding: 26px 0 30px;
+	font-size: 18px;
+	width: 472px;
+	font-family: $font-secondary;
+}
+.banner__a {
+	background-color: $primary;
+	padding: 15px 37px;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+
+	&:hover {
+		background-color: transparent;
+		border: 1px solid $primary;
+		color: $primary;
+	}
+}
+
+// Slick slider styles
+
+.slick-dots {
+	position: absolute;
+	bottom: 27px;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+
+	li {
+		top: 10px;
+		margin: 0;
+	}
+
+	li.slick-active button:before {
+		background-color: #000;
+		color: transparent;
+	}
+	li button:before {
+		color: transparent;
+		border: 1px solid #000;
+		border-radius: 50%;
+		width: 9px;
+		height: 9px;
+	}
+}

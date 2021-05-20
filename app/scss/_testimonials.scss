@@ -1,42 +1,82 @@
 .testimonials {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../../img/testimonials.jpg');
-    background-position: right top;
-    background-repeat: no-repeat;
+    background-color: $color-bckg-testimonials;
     color: #fff;
     text-align: center;
-    &__text-holder {
-        margin: 100px 0 100px 13px;
-        padding: 45px 113.5px 62px;
-        border: 1px solid $color-primary;
-        width: 57.5%;
-        h2, &__name {
-            text-transform: uppercase;
-        }
-        &__name {
-            font-weight: 400;
-            font-size: 14px;
-            
-        }
-        h2 {
-            font-weight: 600;
-            font-size: 36px;
-            position: relative;
-            padding-bottom: 15px;
+    padding: 96px 0;
+    margin-bottom: 65px;
+}
 
-            &::after {
-                @include h-after;
-                left: 50%;  
-            }
-        }
-        p {
-            padding-top: 23px;
-            font-weight: 300;
-            line-height: 30px;
-            &:last-child {
-                padding-top: 5px;
-                padding-left: 18px;
-            }
+.testimonials__wrapper {
+    border: 1px solid $primary;
+}
 
-        }
+.testimonial__quotes {
+    background-color: $color-bckg-testimonials;
+    transform: translate(0, -16px);
+    width: 64px;
+    margin: 0 auto;
+}
+
+
+.testimonials__slide {
+    margin: 10px 0 18px;
+    padding: 0 120px 25px;
+}
+
+.testimonials__h2, .testimonials__span {
+    text-transform: uppercase;
+}
+
+.testimonials__h2 {
+    padding-top: 10px;
+    padding-bottom: 16px;
+    font-size: 36px;
+    letter-spacing: .8px;
+    &::after {
+        @include h-after;
+        left: 50%;
+		width: 40px;
     }
+}
+.testimonials__p {
+    font-family: $font-secondary;
+    padding-top: 28px;
+    line-height: 1.8;
+}
+.testimonials__span {
+    padding-top: 9px;
+    padding-bottom: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+// Slick slider styles
+.js-testimonials__carousel {
+    .slick-dots {
+        // position: absolute;
+        // bottom: 120px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        transform: translate(0, 35px);
+        li {
+            top: -7px;
+            margin: 0;
+        }
+    
+        li.slick-active button:before {
+            background-color: $primary;
+            color: transparent;
+        }
+        li button:before {
+            color: transparent;
+            border: 1px solid $primary;
+            border-radius: 50%;
+            width: 9px;
+            height: 9px;
+        }
+    } 
 }
