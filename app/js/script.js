@@ -24,3 +24,25 @@ $(document).ready(() => {
 });
 
 
+$(function() {
+
+    $('.btn').on('click', function() {
+
+		let name = $(this).attr('data-name');
+
+		// Hide current tab
+		$('.content.active').hide(function() {
+			$(this).removeClass('active');
+			
+			$('.content'+name).show(function() {
+				$(this).addClass('active');
+			});
+			// $(".content [`data-content= ${name}`]").show(function() {
+			// 	$(this).addClass('active');
+			// });
+		});
+    });
+
+
+});
+

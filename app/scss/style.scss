@@ -16,3 +16,17 @@
 @import 'contact';
 @import 'footer';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.content {
+    display: none;
+}
+.content .active {
+    display: block;
+}
+.active {
+    display: block;
+}
+.tabs {
+    text-align: center;
+    margin-bottom: 400px;
+}
