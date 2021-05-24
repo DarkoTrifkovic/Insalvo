@@ -1,6 +1,7 @@
 
-$(document).ready(() => {
-    $('.js-banner__carousel, .js-testimonials__carousel').slick({
+$(function() {
+
+	$('.js-banner__carousel, .js-testimonials__carousel').slick({
         autoplay: false,
         autoplaySpeed: 2000,
         dots: true,
@@ -8,7 +9,7 @@ $(document).ready(() => {
         arrows: false
     });
 
-    $('.faq__card-header').click(function () {
+    $('.faq__card-header').on('click', function () {
 		// self clicking close
 		if ($(this).next('.faq__card-body').hasClass('active')) {
 			$(this).next('.faq__card-body').removeClass('active').slideUp();
@@ -21,14 +22,12 @@ $(document).ready(() => {
       
 		}
 	});
-});
-
-
-$(function() {
 
     $('.btn').on('click', function() {
 
 		let name = $(this).attr('data-name');
+		let content = name;
+		console.log(name, content);
 
 		// Hide current tab
 		$('.content.active').hide(function() {
@@ -43,6 +42,20 @@ $(function() {
 		});
     });
 
+// form input
+	function stateCheck($formControl) {
+		if($formControl.val().length > 0) {
+			$formControl.addClass('valid');
+		}else {
+			$formControl.removeClass('valid');
+		}
+	}
+
+	$('.js-form__form-control').on('focusout', function(){
+		stateCheck($(this));
+	});
 
 });
+
+
 
