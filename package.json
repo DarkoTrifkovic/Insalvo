@@ -18,7 +18,11 @@
     "postcss": "^8.1.2"
   },
   "dependencies": {
-    "node": "^16.1.0"
+    "@fancyapps/fancybox": "^3.5.7",
+    "autoprefixer": "^10.2.5",
+    "bootstrap": "^5.0.1",
+    "node": "^16.1.0",
+    "slick-carousel": "^1.8.1"
   },
   "description": ""
 }

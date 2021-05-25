@@ -1,0 +1,145 @@
+.form {
+	display: flex;
+	background-color: $color-bckg-form;
+	margin-bottom: 86px;
+}
+.form__img-holder,
+.form__form-holder {
+	width: 50%;
+}
+
+.form__img {
+	max-width: 100%;
+}
+.form__form-holder {
+	padding-left: 110px;
+	padding-top: 67px;
+}
+.form__h2 {
+	text-transform: uppercase;
+	font-size: 36px;
+	color: #262626;
+}
+.form__p {
+	opacity: 0.85;
+	color: #666666;
+	font-family: $font-secondary;
+}
+.form__span-holder {
+	display: flex;
+	margin-top: 32px;
+}
+.form__span-holder-left {
+	margin-right: 156px;
+}
+.form__span {
+	display: block;
+	color: #666666;
+	font-size: 14px;
+	line-height: 24px;
+}
+.form__h3 {
+	font-size: 36px;
+	color: #111;
+	padding-top: 30px;
+	padding-bottom: 6px;
+	font-weight: 400;
+}
+
+.form__div-after {
+	width: 173px;
+	height: 2px;
+	background-color: #111;
+}
+
+.form__wrapper {
+	display: flex;
+	padding-top: 25px;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		background-color: #111;
+		top: 0;
+		transform: translateX(-50%);
+		left: 30px;
+		width: 60px;
+		height: 6px;
+	}
+}
+
+.form__input-group {
+	margin: 48px 0;
+	position: relative;
+	font-size: 14px;
+
+	&:first-child {
+		margin-right: 30px;
+	}
+}
+.form__textarea-group {
+	margin-bottom: 15px;
+}
+
+.js-form__form-control {
+	padding: 7px 0;
+	width: 250px;
+	border: none;
+	border-bottom: 1px solid gray;
+	outline: none !important;
+
+	&:focus {
+		border-color: #2aaeb3 !important;
+		box-shadow: none !important;
+	}
+}
+
+.form__label-input,
+.form__label-textarea {
+	position: absolute;
+	top: 10px;
+	left: 3px;
+	text-transform: capitalize;
+	color: #8d8d8d;
+	transition: 0.2s;
+	font-size: 14px;
+}
+
+.form__label-textarea {
+	top: -40px !important;
+}
+
+.js-form__form-control:focus ~ label,
+.js-form__form-control.valid ~ label {
+	top: -30px;
+}
+
+.js-form__form-control,
+.form__textarea {
+	background-color: #f1f1f1 !important;
+	color: #000 !important;
+}
+
+.form__textarea {
+	border: 1px solid gray;
+}
+
+.form__btn {
+	color: #fff;
+	background-color: $primary;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: none;
+	padding: 15px 50px;
+	margin-left: 380px;
+	transition: 0.3s;
+	// :hover {
+	//     color: $primary;
+	//     background-color: transparent;
+	// }
+}
+.form__btn:hover {
+	color: $primary;
+	background-color: rgba($color: $primary, $alpha: 0.2);
+}

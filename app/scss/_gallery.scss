@@ -1,0 +1,27 @@
+.gallery {
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 64px;
+}
+.gallery__img {
+    width: 100%;
+}
+
+.gallery__h2 {
+    font-size: 36px;
+    color: $color-hero-p;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    margin-bottom: 46px;
+    &::after {
+        @include h-after;
+        width: 40px;
+        left: 50%;
+    }
+}
+
+.gallery__box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 301px;
+}

@@ -1,0 +1,108 @@
+.text-box {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    margin-bottom: -150px;
+}
+.text-box__img {
+    width: 100%;
+
+}
+.text-box__text-holder {
+    width: 540px;
+    box-shadow: 0 4px 57px rgba(0, 1, 1, 0.23);
+    padding-left: 90px;
+    padding-top: 70px;
+    padding-right: 250px;
+    transform: translate(0px, -270px);
+    background-color: #FFF;
+    margin-left: 72px;
+}
+.text-box__span {
+    color: $primary;
+    letter-spacing: 4.4px;
+}
+
+.text-box__h2, .text-box__button, .text-box__a {
+    text-transform: uppercase;
+
+}
+.text-box__h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+}
+.text-box__spans {
+    display: block;
+    font-size: 14px;
+    color: $color-story-first-p;
+    line-height: 24px;
+}
+.text-box__button {
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #212121;
+    color: #212121;
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    padding: 17px 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.text-box__wrapper {
+    display: flex;
+}
+.text-box__social-media {
+    display: flex;
+}
+.text-box__social-media-box-black, .text-box__social-media-box-grey, .text-box__social-media-box-brown {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.text-box__social-media-box-black {
+    background-color: #212121;
+
+    &:first-child {
+        width: 180px;
+        height: 180px;
+    }
+
+}
+.text-box__social-media-box-black--second {
+    transform: translate(-180px, 90px);
+
+}
+.text-box__social-media-box-grey {
+    background-color: #e9e9e9;
+
+    .text-box__a {
+        color: #121b23;
+    }
+}
+.text-box__social-media-box-grey--second {
+    transform: translate(-180px, 180px);
+}
+.text-box__social-media-box-brown {
+    background-color: #b8976a;
+
+}
+.text-box__social-media-box-brown--first {
+    transform: translate(0, -90px);
+    
+}
+.text-box__social-media-box-brown--second {
+    transform: translate(-180px, 180px);
+    
+}
+
+.text-box__a {
+    color: #fff;
+}

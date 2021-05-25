@@ -1,12 +1,26 @@
-$font-primary: 'Merriweather', serif;
-$font-secondary: 'Poppins', sans-serif;
+$primary: #af943e;
+$color-services: #b0953e;
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Merriweather', serif;
 $font-third: 'Raleway', sans-serif;
 $color-nav-item: #4b4b4b;
 $color-bckg-top-bar: #2e2e2f;
-$color-primary: #af943e;
-$color-hero-p: #333333;
+$color-hero-p: #333;
 $color-story-first-p: #666;
 $color-bckg-story: #f3f4f5;
 $color-bckg-footer-top: #181a1b;
 $color-bckg-footer-bottom: #141516;
 $color-footer-top: #888888;
+$color-bckg-u-and-r: #1c1c1c;
+$color-bckg-u-and-r-reverse: #f3f4f5;
+$color-bckg-testimonials: #181a1b;
+$color-accordion-arrow: #b19d60;
+$color-bckg-accordion-p: #f5f5f5;
+$color-bckg-form: #f1f1f1;
+$container-max-widths: (
+  sm: 316px,
+  md: 496px,
+  lg: 736px,
+  xl: 916px,
+  xxl: 1120px   // 1106  // 1096
+);

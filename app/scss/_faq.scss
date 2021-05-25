@@ -1,0 +1,83 @@
+  
+.faq {
+    margin-bottom: 62px;
+}
+.faq__accordion {
+    margin-top: 54px;
+    margin-left: 82px;
+}
+.faq__h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 27px;
+    word-spacing: 3px;
+    text-align: center;
+    margin-left: 42px;
+    &::after {
+        @include h-after;
+        width: 40px;
+        left: 50%;
+    }
+}
+
+.faq__p {
+	font-size: 14px;
+    color: $color-story-first-p;
+	margin: 30px 0 0;
+    position: relative;
+    background-color: $color-bckg-accordion-p;
+    padding: 53px 10px 49px 72px;
+    line-height: 1.7;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 61px;
+        background-color: $primary;
+        left: -15px;
+        top: -20px;
+    }
+}
+
+.faq__a {
+    cursor: pointer;
+    position: relative;
+    margin:0;
+    padding: 0 76px;
+    text-decoration: none;
+    color: $color-hero-p;
+    font-size: 25px;
+}
+
+// JS usage
+.js-faq__card{
+	margin-bottom:20px;
+	width: 100%;
+}
+
+.js-faq__card-body{
+	padding:20px;
+}
+.js-faq__card-body{
+	display: none;
+}
+
+// Arrows
+
+.faq__arrow {
+    border: solid $color-accordion-arrow;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 4px;
+  }
+  
+  .js-faq__right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .js-faq__down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
