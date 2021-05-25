@@ -35,6 +35,10 @@
 	align-items: center;
 	width: 259px;
 	height: 200px;
+
+	// @include mq(tablet) {
+	// 	text-align: center;
+	// }
 }
 
 .services__link {
