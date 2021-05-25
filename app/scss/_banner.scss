@@ -6,13 +6,19 @@
 	min-height: 780px;
 }
 
+<<<<<<< HEAD
 .banner__a, .banner__h1 {
+=======
+.banner__h1,
+.banner__a {
+>>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
 	text-transform: uppercase;
 }
 
 .banner__h1 {
 	font-size: 60px;
 	font-weight: bold;
+<<<<<<< HEAD
 	padding-top: 239px;
 	padding-bottom: 21px;
 	letter-spacing: .5px;
@@ -21,11 +27,23 @@
 	&::after {
 		@include h-after;
 		left: 31px;
+=======
+	padding-top: 236px;
+	padding-bottom: 24px;
+	letter-spacing: .5px;
+	&::after {
+		@include h-after;
+		left: 26px;
+>>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
 		width: 50px;
 	}
 }
 .banner__p {
+<<<<<<< HEAD
 	padding: 26px 0 30px 7px;
+=======
+	padding: 26px 0 30px;
+>>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
 	font-size: 18px;
 	width: 472px;
 	font-family: $font-secondary;
@@ -36,7 +54,11 @@
 	color: #fff;
 	font-size: 14px;
 	text-decoration: none;
+<<<<<<< HEAD
 	margin-left: 7px;
+=======
+
+>>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
 	&:hover {
 		background-color: transparent;
 		border: 1px solid $primary;

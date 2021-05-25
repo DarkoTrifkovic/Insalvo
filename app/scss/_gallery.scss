@@ -1,6 +1,7 @@
 .gallery {
     text-align: center;
     overflow: hidden;
+<<<<<<< HEAD
     margin-bottom: 64px;
 }
 .gallery__img {
@@ -24,4 +25,10 @@
     padding-top: 10px;
     padding-bottom: 10px;
     min-height: 301px;
+=======
+    img {
+        width: 100%;
+    }
+
+>>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
 }
