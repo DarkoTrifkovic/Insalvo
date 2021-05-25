@@ -68,11 +68,19 @@
 
 .header__bottom {
 	margin-top: 22px;
+	@include mq(tablet) {
+		margin-bottom: 100px;
+	}
+
 }
 .header__bottom-nav {
 	display: flex;
 	justify-content: flex-end;
 	position: relative;
+	@include mq(tablet) {
+		display: block;
+		z-index: 2;
+	}
 }
 .bottom-nav__nav {
 	display: flex;
@@ -84,18 +92,43 @@
 	padding-right: 3px;
 }
 
+// Hamburger menu
+
+.header__nav-ham {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+	font-size: 32px;
+	z-index: 3;
+	@include mq(tablet) {
+		display: block;
+	}
+}
+
 // Sticky nav
 
 .bottom-nav__nav-sticky {
+	background-color: #fff;
 	position: fixed;
-	top: 0;
+	top: -22px;
 	right: 0;
 	width: 100%;
-	opacity: .9;
+	opacity: .7;
+	z-index: 2;
+	padding: 5px;
+	.header__bottom-logo-a {
+		img {
+			width: 200px;
+		}	
+	}
 }
 
 .nav__ul {
 	display: flex;
+	@include mq(tablet) {
+		display: none;
+	}
 }
 .nav__list {
 	list-style: none;
@@ -105,6 +138,10 @@
 	padding: 0 0 6px 24px;
 	&:not(:last-child) {
 		padding-right: 10px;
+	}
+	@include mq(tablet) {
+		padding: 10px;
+		
 	}
 }
 .nav__link {

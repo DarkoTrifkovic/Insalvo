@@ -30,3 +30,18 @@
     padding-top: 62px;
     padding-left: 40px;
 }
+
+@mixin mq($point) {
+    @if $point == mobile {
+        @media screen and(max-width: 480px) { @content; }
+    }
+    @else if $point == tablet {
+        @media screen and(max-width: 768px) { @content; }
+    }
+    @else if $point == laptop {
+        @media screen and(max-width: 1024px) { @content; }
+    }
+    @else if $point == desktop {
+        @media screen and(max-width: 1200px) { @content; }
+    }
+}

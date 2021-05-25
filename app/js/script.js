@@ -64,4 +64,31 @@ $(function () {
 		stateCheck($(this));
 	});
 
+
+	// Sticky nav
+
+	$('.js-services').waypoint(function(direction) {
+		if(direction == 'down') {
+			$('.header__bottom').addClass('bottom-nav__nav-sticky');
+		}else {
+			$('.header__bottom').removeClass('bottom-nav__nav-sticky');
+		}
+	});
+
+	//Mobile nav
+
+	$('.js-header__nav-ham').on('click', function(){
+		const nav = $('.js-nav__ul');
+		const icon = $('.js-nav__icon');
+		nav.slideToggle(200);
+
+		if(icon.hasClass('fa-bars')) {
+			icon.addClass('fa-times');
+			icon.removeClass('fa-bars');
+		} else {
+			icon.addClass('fa-bars');
+			icon.removeClass('fa-times');
+		}
+	});
+
 });

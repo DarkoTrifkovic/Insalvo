@@ -41,20 +41,21 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="header__bottom-logo col-6">
+                        <div class="header__bottom-logo col-12 col-sm-6">
                             <a class="header__bottom-logo-a" href="javascript:;">
                                 <img src="img/logo.png" alt="logo">
                             </a>
                         </div>
     
-                        <div class="header__bottom-nav col-6">
+                        <div class="header__bottom-nav col-12 col-sm-6">
                             <nav class="bottom-nav__nav">
-                                <ul class="nav__ul">
+                                <ul class="nav__ul js-nav__ul">
                                     <li class="nav__list"><a class="nav__link" href="javascript:;">Start</a></li>
                                     <li class="nav__list"><a class="nav__link" href="javascript:;">Über uns</a></li>
                                     <li class="nav__list"><a class="nav__link" href="javascript:;">Dienstleistungen <i class="fas fa-chevron-down nav__link-arrow"></i></a></li>
                                     <li class="nav__list"><a class="nav__link" href="javascript:;">Kontakt</a></li>
                                 </ul>
+                                <a href="javscript:;" class="header__nav-ham js-header__nav-ham"><i class="fas fa-bars js-nav__icon"></i></a>
                             </nav>
                         </div>
                         
@@ -101,7 +102,7 @@
 
         </section> <!-- Banner END-->
 
-        <section class="services">
+        <section class="services js-services">
             <div class="container">
 
                     <h2 class="services__h2">Our services</h2>
@@ -483,7 +484,7 @@
                     </div>
                 </div>
             </div>
-        </section> <!-- text-box END -->
+        </section> text-box END
         <section class="form">
             <div class="form__img-holder">
                 <img class="form__img" src="img/contact-us.jpg" alt="contact-us">
@@ -637,6 +638,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="node_modules/slick-carousel/slick/slick.js"></script>
     <script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="app/assets/waypoints-master/lib/jquery.waypoints.min.js"></script>
     <script src="dist/script.js"></script>
   </body>
 </html>
