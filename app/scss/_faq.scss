@@ -1,4 +1,3 @@
-<<<<<<< HEAD
   
 .faq {
     margin-bottom: 62px;
@@ -6,23 +5,11 @@
 .faq__accordion {
     margin-top: 54px;
     margin-left: 82px;
-=======
-.faq {
-    margin-bottom: 400px;
-}
-.faq__accordion {
-    margin-top: 54px;
-    margin-left: 72px;
->>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
 }
 .faq__h2 {
     font-size: 36px;
     font-weight: bold;
-<<<<<<< HEAD
     padding-bottom: 27px;
-=======
-    padding-bottom: 21px;
->>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
     word-spacing: 3px;
     text-align: center;
     margin-left: 42px;
@@ -36,19 +23,11 @@
 .faq__p {
 	font-size: 14px;
     color: $color-story-first-p;
-<<<<<<< HEAD
 	margin: 30px 0 0;
     position: relative;
     background-color: $color-bckg-accordion-p;
     padding: 53px 10px 49px 72px;
     line-height: 1.7;
-=======
-	margin: 60px 0 0;
-    position: relative;
-    background-color: $color-bckg-accordion-p;
-    padding: 53px 10px 49px 167px;
-
->>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
     &::before {
         content: "";
         position: absolute;
@@ -56,7 +35,6 @@
         height: 61px;
         background-color: $primary;
         left: -15px;
-<<<<<<< HEAD
         top: -20px;
     }
 }
@@ -66,27 +44,11 @@
     position: relative;
     margin:0;
     padding: 0 76px;
-=======
-        top: -70px;
-    }
-}
-
-.faq__card{
-	margin-bottom:20px;
-	width: 100%;
-}
-.faq__a {
-	cursor: pointer;
-	position: relative;
-	margin:0;
-	padding: 0 76px;
->>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
     text-decoration: none;
     color: $color-hero-p;
     font-size: 25px;
 }
 
-<<<<<<< HEAD
 // JS usage
 .js-faq__card{
 	margin-bottom:20px;
@@ -102,15 +64,6 @@
 
 // Arrows
 
-=======
-.faq__card-body{
-	padding:20px;
-}
-.faq__card-body{
-	display: none;
-}
-
->>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
 .faq__arrow {
     border: solid $color-accordion-arrow;
     border-width: 0 2px 2px 0;
@@ -119,20 +72,12 @@
     margin-bottom: 4px;
   }
   
-<<<<<<< HEAD
   .js-faq__right {
-=======
-  .faq__right {
->>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
   }
 
-<<<<<<< HEAD
   .js-faq__down {
-=======
-  .faq__down {
->>>>>>> 83f2743d05bc7bbacacf12bc034cc2b21b5208e3
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
